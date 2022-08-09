@@ -3,6 +3,6 @@
 
 <ul class="m-3 list-group">
   <% @tasks.each do |task| %>
-    <li class="w-25 p-3 list-group-item text-center"><%= link_to task.title, task_path(task) %></li>
+    <li class="w-25 p-3 list-group-item text-center"><%= link_to task.title, task_path(task) %><div class: "text-right"><%=task.completed == true ? "✅" : "⬜️"%></div></li>
   <% end %>
 </ul>
