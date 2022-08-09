@@ -1,4 +1,4 @@
-<h1>Edit task</h1>
+<h1> Delete task</h1>
 
 <%= form_for(@task) do |f| %>
   <%= f.label :title %>
@@ -6,6 +6,6 @@
   <%= f.label :details %>
   <%= f.text_field :details %>
   <%= f.label :completed %>
-  <%= f.check_box :completed %>
+  <%= f.number_field :completed %>
   <%= f.submit %>
 <% end %>
