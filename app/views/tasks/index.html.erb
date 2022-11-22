@@ -3,7 +3,7 @@
 
   <ul id="tasks">
     <% @tasks.each do |task| %>
-      <li>
+      <li class="m-2">
         <% if task.completed? %>
           <i class="fa-regular fa-square-check"></i>
         <% else %>
@@ -17,7 +17,7 @@
     <% end %>
   </ul>
 
-  <hr>
+  <hr class="w-50">
 
   <%= link_to new_task_path do %>
     <i class="fa-solid fa-plus"></i> Add a new task

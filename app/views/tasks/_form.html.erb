@@ -1,3 +1,18 @@
+<%= form_for(@task) do |f| %>
+  <div class="form-group w-50">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control' %>
+  </div>
+  <div class="form-group w-50">
+    <%= f.label :details %>
+    <%= f.text_field :details, class: 'form-control' %>
+  </div>
+  <%= f.submit class: 'btn btn-primary mt-3' %>
+<% end %>
+
+<%
+=begin %>
+
 <%= form_with model: @task do |f| %>
   <div class="form-group">
     <%= f.label :title %>
@@ -18,3 +33,6 @@
   <% end %>
   <%= f.submit class: 'btn btn-primary mt-3' %>
 <% end %>
+
+<%
+=end %>
