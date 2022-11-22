@@ -19,6 +19,10 @@
   <%= link_to tasks_path do %>
     <i class="fa-solid fa-arrow-rotate-left"></i> Back to list
   <% end %>
+  <%= link_to mark_as_done_path(@task.id), class: 'btn btn-light btn-sm border ms-3' do %>
+    <i class="fa fa-check"></i> Mark as completed
+  <% end %>
+
 </div>
 
 <%
